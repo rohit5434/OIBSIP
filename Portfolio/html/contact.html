@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+input[type=submit] {
+background-color: #04AA6D;
+color: white;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+}
+input[type=submit]:hover {
+background-color: #45a049;
+}
+}
+/* Create two columns that float next to eachother */
+.column {
+float: left;
+width: 50%;
+margin-top: 6px;
+padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 15px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+</style>
+</head>
+<body>
+<div>
+<img src="/images/rohit.png"></img>
+</div>
+<div class="topnav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="work.html">Work Experience</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="column">
+<form>
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="firstname" placeholder="Your name..">
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lastname" placeholder="Your
+last name..">
+<label for="country">Country</label>
+<select id="country" name="country">
+<option value="australia">Australia</option>
+<option value="canada">Canada</option>
+<option value="usa">USA</option>
+</select>
+<label for="subject">Subject</label>
+<textarea id="subject" name="subject" placeholder="Write
+something.." style="height:170px"></textarea>
+<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
